@@ -3,96 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naik Tours And Travels</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 0.5rem;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Naik Tours And Travels - Unforgettable Journeys Await</title>
+    <meta name="description" content="Discover the world with Naik Tours And Travels. We offer tailored packages for beach getaways, mountain expeditions, and cultural discoveries.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Naik Tours And Travels - Unforgettable Journeys">
+    <meta property="og:description" content="Discover the world with our tailored travel packages. From beaches to mountains, we've got your dream vacation covered.">
+    <meta property="og:image" content="https://www.naiktours.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.naiktours.com">
 </head>
 <body>
     <header>
-        <h1>Naik Tours And Travels</h1>
-        <p>Your gateway to unforgettable journeys</p>
+        <nav>
+            <div class="logo">Naik Tours And Travels</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="header-cta">
+                <a href="#" class="cta-button">Book Now</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search destinations...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#tours">Tours</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="home">
-            <h2>Welcome to Naik Tours And Travels</h2>
-            <p>Discover the world with our expertly curated travel experiences.</p>
+        <section id="home" class="hero">
+            <div class="hero-slider">
+                <!-- Add multiple background images or videos here -->
+            </div>
+            <div class="hero-content">
+                <h1>Discover the World with Us</h1>
+                <p>Unforgettable journeys, tailored just for you</p>
+                <form class="hero-search">
+                    <input type="text" placeholder="Where do you want to go?">
+                    <input type="date" placeholder="Departure date">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
         </section>
 
-        <section id="tours">
-            <h2>Our Popular Tours</h2>
-            <ul>
-                <li>Beach Getaways</li>
-                <li>Mountain Adventures</li>
-                <li>Cultural Expeditions</li>
-                <li>City Explorations</li>
-            </ul>
+        <section id="destinations" class="destinations" data-aos="fade-up">
+            <h2>Popular Destinations</h2>
+            <div class="destination-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beach">Beaches</button>
+                <button class="filter-btn" data-filter="mountain">Mountains</button>
+                <button class="filter-btn" data-filter="city">Cities</button>
+            </div>
+            <div class="destination-grid">
+                <div class="destination-card" data-category="beach">
+                    <img src="images/beach.jpg" alt="Tropical Beach">
+                    <h3>Tropical Paradise</h3>
+                    <p>Experience pristine beaches and crystal-clear waters</p>
+                </div>
+                <div class="destination-card" data-category="mountain">
+                    <img src="images/mountain.jpg" alt="Mountain Range">
+                    <h3>Mountain Adventure</h3>
+                    <p>Conquer peaks and breathe in the fresh mountain air</p>
+                </div>
+                <div class="destination-card" data-category="city">
+                    <img src="images/city.jpg" alt="City Skyline">
+                    <h3>Urban Exploration</h3>
+                    <p>Immerse yourself in vibrant city life and culture</p>
+                </div>
+                <!-- Add more destination cards here -->
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Naik Tours And Travels is committed to providing unforgettable travel experiences and adventures around the globe.</p>
+        <section id="packages" class="packages" data-aos="fade-up">
+            <h2>Our Tour Packages</h2>
+            <div class="package-tabs">
+                <button class="tab-btn active" data-tab="all">All Packages</button>
+                <button class="tab-btn" data-tab="beach">Beach</button>
+                <button class="tab-btn" data-tab="mountain">Mountain</button>
+                <button class="tab-btn" data-tab="cultural">Cultural</button>
+            </div>
+            <div class="package-slider">
+                <div class="package-card" data-category="beach">
+                    <img src="images/beach-package.jpg" alt="Beach Getaway">
+                    <h3>Beach Getaway</h3>
+                    <p>7 days of sun, sand, and relaxation</p>
+                    <ul>
+                        <li>All-inclusive resort stay</li>
+                        <li>Water sports activities</li>
+                        <li>Sunset cruise</li>
+                    </ul>
+                    <span class="price">From $999</span>
+                    <a href="#" class="book-button">Book Now</a>
+                </div>
+                <div class="package-card" data-category="mountain">
+                    <img src="images/mountain-package.jpg" alt="Mountain Expedition">
+                    <h3>Mountain Expedition</h3>
+                    <p>10 days of thrilling hiking and scenery</p>
+                    <ul>
+                        <li>Guided hikes</li>
+                        <li>Camping equipment</li>
+                        <li>Wildlife watching</li>
+                    </ul>
+                    <span class="price">From $1299</span>
+                    <a href="#" class="book-button">Book Now</a>
+                </div>
+                <div class="package-card" data-category="cultural">
+                    <img src="images/cultural-package.jpg" alt="Cultural Discovery">
+                    <h3>Cultural Discovery</h3>
+                    <p>14 days exploring ancient traditions</p>
+                    <ul>
+                        <li>Local guide</li>
+                        <li>Traditional accommodations</li>
+                        <li>Authentic cuisine experiences</li>
+                    </ul>
+                    <span class="price">From $1599</span>
+                    <a href="#" class="book-button">Book Now</a>
+                </div>
+                <!-- Add more package cards here -->
+            </div>
         </section>
 
-        <section id="contact">
+        <section id="testimonials" class="testimonials" data-aos="fade-up">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p>"An incredible experience! Naik Tours made our dream vacation a reality."</p>
+                    <span class="author">- John D.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Professional service and unforgettable memories. Highly recommended!"</p>
+                    <span class="author">- Sarah M.</span>
+                </div>
+                <!-- Add more testimonials here -->
+            </div>
+        </section>
+
+        <section id="blog" class="blog" data-aos="fade-up">
+            <h2>Travel Tips & Inspiration</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="images/blog1.jpg" alt="Blog post 1">
+                    <h3>10 Must-Visit Hidden Gems in Europe</h3>
+                    <p>Discover off-the-beaten-path destinations that will take your breath away...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <img src="images/blog2.jpg" alt="Blog post 2">
+                    <h3>Sustainable Travel: Tips for Eco-Friendly Adventures</h3>
+                    <p>Learn how to minimize your environmental impact while exploring the world...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <!-- Add more blog posts here -->
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter" data-aos="fade-up">
+            <h2>Stay Updated with Our Latest Offers</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="about" class="about" data-aos="fade-up">
+            <h2>About Naik Tours And Travels</h2>
+            <p>With over 20 years of experience, we specialize in creating unforgettable travel experiences. Our team of expert guides and travel planners are dedicated to making your dream vacation a reality.</p>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="number">20+</span>
+                    <span class="label">Years of Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="number">10,000+</span>
+                    <span class="label">Happy Travelers</span>
+                </div>
+                <div class="stat">
+                    <span class="number">50+</span>
+                    <span class="label">Destinations</span>
+                </div>
+            </div>
+            <h3>Our Team</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/team1.jpg" alt="Team Member 1">
+                    <h4>Jane Doe</h4>
+                    <span>Founder & CEO</span>
+                </div>
+                <div class="team-member">
+                    <img src="images/team2.jpg" alt="Team Member 2">
+                    <h4>John Smith</h4>
+                    <span>Head of Operations</span>
+                </div>
+                <!-- Add more team members here -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact" data-aos="fade-up">
             <h2>Contact Us</h2>
-            <p>Email: info@naiktours.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <div class="contact-container">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City, 12345</p>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                    <p><i class="fas fa-envelope"></i> info@naiktours.com</p>
+                    <div id="map">
+                        <!-- Add your map embed code here -->
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Naik Tours And Travels. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Naik Tours And Travels. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
