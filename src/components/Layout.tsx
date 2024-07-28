@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./Header"
 import AboutUs from "./AboutUs"
 import Gallery from "./Gallery"
+import Footer from "./Footer"
 
 const NavBarLayout = ({ children }) => {
     const galleryItems = [
@@ -40,9 +41,7 @@ const NavBarLayout = ({ children }) => {
         {children}
       </main>
 
-      <footer className="bg-gray-800 text-white py-6">
-        {/* Footer content remains the same */}
-      </footer>
+      <Footer />
     </div>
   )
 }
