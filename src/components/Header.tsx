@@ -19,7 +19,7 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex-shrink-0">
-            <img className="h-8 w-auto" src="/logo.png" alt="Company Logo" />
+            <img className="h-14 w-full " src="/logo.png" alt="Company Logo" />
           </Link>
           <div className="hidden md:flex md:items-center md:justify-center md:flex-1">
             <div className="flex items-baseline space-x-4">
