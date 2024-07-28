@@ -2,6 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import NavBarLayout from "../components/Layout"
 import Gallery from "../components/Gallery"
+import AboutUs from "../components/AboutUs"
 
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -15,6 +16,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <NavBarLayout>
       <div className="underline font-bold">Discover the World with Us</div>
       <Gallery items={galleryItems} />
+      <AboutUs />
     </NavBarLayout>
   )
 }
