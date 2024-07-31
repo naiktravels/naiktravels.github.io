@@ -21,7 +21,7 @@ const AboutUs: React.FC = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-20">
+    <div className="bg-gradient-to-b w-full from-gray-50 to-white py-20">
       <motion.div
         className="container mx-auto px-6 md:px-12"
         variants={containerVariants}
@@ -79,7 +79,7 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
       </motion.div>
-    </section>
+    </div>
   );
 };
 
